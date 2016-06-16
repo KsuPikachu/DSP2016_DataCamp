@@ -82,9 +82,29 @@ table th {
   font-weight: 700;
   padding: 0.5em 1em 0.5em 1em;
   text-align: center;
+  color: #fff;
 }
 
 table thead {
   background: #555555;
   color: #fff;
+}
+ol li, ul li {
+    margin-bottom: 0.3em;
+}
+
+body{
+  font-size:16px;
+}
+
+
+.col2 {
+  columns: 2 200px;         /* number of columns and width in pixels*/
+  -webkit-columns: 2 200px; /* chrome, safari */
+  -moz-columns: 2 200px;    /* firefox */
+}
+.col3 {
+  columns: 3 100px;
+  -webkit-columns: 3 100px;
+  -moz-columns: 3 100px;
 }

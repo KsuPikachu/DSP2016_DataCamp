@@ -34,22 +34,18 @@ output:
 
 ## Agenda For DSP
 
-- 研究主題 (10 mins)
-- 資料收集與整理(Homework) (10 mins)
-- EDA by ggplot (暫時不帶入分群方法 60 mins)
-    - 空間資料分析：ggmap => 用電量地圖 (demo 20 ~ 30 min)
-    - 用電量與面積的關係 (demo 5 min)
-    - 用電量與男女比例的關係 (do)
-    - 用電量與老人比例的關係 (do)
-    - 用電量與教育程度的關係 (do)
-    - 用電量與所得的關係 (do)
-    
-## Agenda For DSP(2)
-
-- 設計Story Dashboard (以簡單的FlexDashboard做上手 40 mins)
-    - 套件安裝
-    - 基本介紹
-    - 將剛剛的分析製作成Dashboard
+- Open Data (10 mins)
+  - + amd (-)
+  - 用電量議題
+- 資料收集與清理 Review (30 mins)
+- Kmeans - 分群方法
+- 進階圖表設計 (60 mins)
+    - 空間資料分析
+        - ggmap => 用電量地圖 (demo 20 ~ 30 min)
+        - gg熱圖 => 遷移資料
+    - 關連性分析：ggplotly => 用電量與面積的關係 
+        - 泡泡圖等等...
+    - 分群方法呈現：雷達圖 
 
 # 研究主題：Power Analysis 
 
@@ -76,10 +72,11 @@ Open Data進行資料分析前，需要具備整理資料的能力 => 很好的�
 
 <div class="columns-2">
 
-<img src="img/eco.jpg" width="400px">
+<img src="img/hot.jpg" width="400px">
 
-
-每到夏天，用電量的議題持續受到關注。對於供電情況，曾說過「兩年不缺電」的經濟部長李世光今[改口表示](https://video.udn.com/news/498892)，供電的確吃緊，經濟部、台電正全力以赴面對。對於今夏能否保證不跳電，李說：「全世界的工程沒有100%。」
+台北創入夏以來最高溫37度 用電吃緊亮「限電警戒」紅燈，隨著溫度升高，用電需求也持續增加、供電吃緊。<br><br>
+<h3>節電？從何節起？<br><br></h3>
+<h3>用電量與人口特質的關係？</h3>
 
 </div>
 
@@ -91,29 +88,29 @@ Open Data進行資料分析前，需要具備整理資料的能力 => 很好的�
 
 ### 你是否曾經思考過:
 
-- 在用電量問題的同時，你瞭解臺灣用電概況嗎？
+<h3>節電？從何節起？<br><br></h3>
 - 臺灣的用電大戶地區有哪些呢？
+<h3>用電量與人口特質的關係？</h3>
 - 用電量高低的背後，是否跟某些因素有關呢？
 
 </div>
 
 ## Power Analysis (3)
 
-### 手把手 Open Data 資料分析 
+<h2>過去相關研究：</h2>
 
-進階圖表設計：
-
-- 空間資料分析 (地圖、密度圖)
-- 雷達圖： 用電量高的里 vs 用電量低的里
-- 互動式圖表： Plotly
-
-分析結果呈現(Optional, FlexDashboard)：
-
-- Rmd
-- FlexDashboard
-- Shiny
+- [北市電力分析](http://rpubs.com/unityculture/183415)
+- [台灣鄉鎮市區用電情況](http://www.thenewslens.com/article/21324)
 
 # 手把手 Open Data 資料分析 
+
+## 逃不過清資料的魔掌啦！
+
+- 清理資料花費將近 **八成** 的時間
+- 練功練coding練頭腦~~練脾氣~~最好的方式
+- 幸運如你，我們已經將[資料打包]()好啦！
+- Homework
+    - 請同學參考[資料收集與整理 (3)](#data3)，將資料進行整理
 
 ## 資料收集與整理 (1)
 
@@ -131,7 +128,7 @@ Open Data進行資料分析前，需要具備整理資料的能力 => 很好的�
 
 </div>
 
-## 資料收集與整理 (3)
+## 資料收集與整理 (3) {.data3}
 
 將以下不同來源的資料按照村里進行串檔(JOIN)：
 
@@ -365,16 +362,4 @@ ggplotly(p1)
 
 
 
-# 分析結果呈現
-
-## What Rmarkdwon ?
-
-## Why Rmarkdown ?
-
-## 基本教學
-
-## What FlexDashboard
-
-## Why Flexdashboard ?
-
-## 基本教學
+<>
